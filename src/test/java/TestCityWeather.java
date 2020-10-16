@@ -50,7 +50,7 @@ public class TestCityWeather {
     sm.verifyWeatherIsDisplayed(city);
     String unit = "Degrees";
     tempUI = sm.getCurrentTemp(city, unit);
-    System.out.println("Temp received through API is"+ tempUI);
+    System.out.println("Temp received through API is "+ tempUI);
 
   }
 
@@ -66,7 +66,7 @@ public class TestCityWeather {
     Assert.assertTrue(response.getStatusCode() == 200);
     System.out.println("Status Code for weather API is 200");
     tempAPI = getCurrentWeather(response);
-    System.out.println("Temp received through API is"+ tempAPI);
+    System.out.println("Temp received through API is "+ tempAPI);
   }
 
   @Test(
